@@ -8,7 +8,7 @@ The script should run on every Ec2 instance that will join into de Elasticsearch
 
 ## How to deploy
 
-Currently the script is stored on an s3 bucket called needish-ops and is there because during the elasticsearch AMI creation using Packer is pulled from the s3 bucket to be run later on when the instance is created using terraform.
+Currently the script is stored on an s3 bucket called needish-ops and is there because during the elasticsearch AMI creation is pulled from that s3 bucket to be run later on when the instance is created using terraform.
 
 ## Who is the wonderful mind that came with this fantastic idea.
 
