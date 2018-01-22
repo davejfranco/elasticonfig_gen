@@ -235,7 +235,7 @@ class Config(Info):
 if __name__ == "__main__":
 
 	cluster = Config()
-	template_dir = '/var/needish/ops/templates'
+	template_dir = '/opt/needish/ops/templates'
 	template_file = 'elasticsearch.yml.j2'
 	elasticsearch_config = '/usr/local/share/elasticsearch/config'
 	cluster.generate(template_dir, template_file, elasticsearch_config)
