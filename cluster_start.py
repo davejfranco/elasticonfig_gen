@@ -197,7 +197,7 @@ class Config(Info):
 
 		return client_struc
 
-	def generate(self, tmlp_dir, tmpl_file, output_dir):
+	def generate(self, tmlp_dir, tmpl_file='elasticsearch.yml.j2', output_dir):
 		"""
 		This is where the old magic starts
 		"""
@@ -233,9 +233,9 @@ class Config(Info):
 
 
 if __name__ == "__main__":
-
+	
 	cluster = Config()
-	template_dir = '/opt/needish/ops/templates'
+	template_dir = '/tmp'
 	template_file = 'elasticsearch.yml.j2'
 	elasticsearch_config = '/usr/local/share/elasticsearch/config'
 	cluster.generate(template_dir, template_file, elasticsearch_config)
